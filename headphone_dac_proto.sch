@@ -1365,7 +1365,7 @@ U 1 1 5F13D267
 P 10100 7800
 F 0 "RV3" H 10100 7950 50  0000 R CNN
 F 1 "100k" V 10100 7900 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10100 7800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 10100 7800 50  0001 C CNN
 F 3 "~" H 10100 7800 50  0001 C CNN
 	1    10100 7800
 	-1   0    0    -1  
@@ -1426,7 +1426,7 @@ U 1 1 5F1D45AC
 P 9700 7800
 F 0 "RV2" H 9700 7950 50  0000 R CNN
 F 1 "100k" V 9700 7900 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9700 7800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9700 7800 50  0001 C CNN
 F 3 "~" H 9700 7800 50  0001 C CNN
 	1    9700 7800
 	-1   0    0    -1  
@@ -1457,7 +1457,7 @@ U 1 1 5F224CE3
 P 9300 7800
 F 0 "RV1" H 9300 7950 50  0000 R CNN
 F 1 "100k" V 9300 7900 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9300 7800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9300 7800 50  0001 C CNN
 F 3 "~" H 9300 7800 50  0001 C CNN
 	1    9300 7800
 	-1   0    0    -1  
@@ -1594,49 +1594,6 @@ Wire Wire Line
 	3550 6200 3250 6200
 Wire Wire Line
 	3250 6100 3550 6100
-$Comp
-L Connector:Conn_01x06_Male J4
-U 1 1 5F3E36AB
-P 5100 4100
-F 0 "J4" H 5072 4074 50  0000 R CNN
-F 1 "Conn_01x06_Male" H 5072 3983 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5100 4100 50  0001 C CNN
-F 3 "~" H 5100 4100 50  0001 C CNN
-	1    5100 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0150
-U 1 1 5F3E555D
-P 4700 3900
-F 0 "#PWR0150" H 4700 3650 50  0001 C CNN
-F 1 "GND" V 4700 3650 50  0000 C CNN
-F 2 "" H 4700 3900 50  0001 C CNN
-F 3 "" H 4700 3900 50  0001 C CNN
-	1    4700 3900
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	4700 3900 4900 3900
-Text Label 4700 4000 0    50   ~ 0
-ft_~cts~
-Text Label 4700 4400 0    50   ~ 0
-ft_~rts~
-Text Label 4700 4300 0    50   ~ 0
-ft_rx
-Text Label 4700 4200 0    50   ~ 0
-ft_tx
-NoConn ~ 4900 4100
-Text Notes 4700 3750 0    50   ~ 0
-FTDI 6 pin connector for: TTL-232R-3V3 Cable
-Wire Wire Line
-	4700 4000 4900 4000
-Wire Wire Line
-	4900 4200 4700 4200
-Wire Wire Line
-	4700 4300 4900 4300
-Wire Wire Line
-	4900 4400 4700 4400
 Text Label 5250 6250 0    50   ~ 0
 bt_rx
 Wire Wire Line
@@ -1659,7 +1616,7 @@ U 1 1 5F4EBD7A
 P 4700 6050
 F 0 "SW1" V 4700 6002 50  0000 R CNN
 F 1 "~" V 4655 6002 50  0000 R CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4700 6250 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 4700 6250 50  0001 C CNN
 F 3 "~" H 4700 6250 50  0001 C CNN
 	1    4700 6050
 	0    -1   -1   0   
@@ -1670,7 +1627,7 @@ U 1 1 5F4ED23B
 P 4700 6750
 F 0 "SW2" V 4700 6702 50  0000 R CNN
 F 1 "~" V 4655 6702 50  0000 R CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4700 6950 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 4700 6950 50  0001 C CNN
 F 3 "~" H 4700 6950 50  0001 C CNN
 	1    4700 6750
 	0    -1   -1   0   
@@ -1821,7 +1778,6 @@ Wire Wire Line
 	6400 5400 6400 5600
 Wire Wire Line
 	6300 5600 6300 5400
-NoConn ~ 6700 5600
 NoConn ~ 6800 5600
 NoConn ~ 8150 7150
 NoConn ~ 8150 7250
@@ -2170,10 +2126,10 @@ F 3 "~" H 7200 9500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0163
 U 1 1 5F064196
 P 7200 10000
-F 0 "#PWR?" H 7200 9750 50  0001 C CNN
+F 0 "#PWR0163" H 7200 9750 50  0001 C CNN
 F 1 "GND" V 7200 9750 50  0000 C CNN
 F 2 "" H 7200 10000 50  0001 C CNN
 F 3 "" H 7200 10000 50  0001 C CNN
@@ -2183,10 +2139,10 @@ $EndComp
 Wire Wire Line
 	7200 10000 7200 9700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0164
 U 1 1 5F076315
 P 7200 9200
-F 0 "#PWR?" H 7200 8950 50  0001 C CNN
+F 0 "#PWR0164" H 7200 8950 50  0001 C CNN
 F 1 "GND" V 7200 8950 50  0000 C CNN
 F 2 "" H 7200 9200 50  0001 C CNN
 F 3 "" H 7200 9200 50  0001 C CNN
@@ -2195,4 +2151,30 @@ F 3 "" H 7200 9200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 9200 7200 9300
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F00B9F6
+P 6700 4750
+F 0 "SW3" V 6700 4702 50  0000 R CNN
+F 1 "~" V 6655 4702 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 6700 4950 50  0001 C CNN
+F 3 "~" H 6700 4950 50  0001 C CNN
+	1    6700 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 5600 6700 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5F01F914
+P 6700 4450
+F 0 "#PWR?" H 6700 4200 50  0001 C CNN
+F 1 "GND" H 6705 4277 50  0000 C CNN
+F 2 "" H 6700 4450 50  0001 C CNN
+F 3 "" H 6700 4450 50  0001 C CNN
+	1    6700 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 4450 6700 4550
 $EndSCHEMATC
