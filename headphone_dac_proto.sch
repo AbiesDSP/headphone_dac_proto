@@ -435,7 +435,7 @@ F 3 "https://statics.cirrus.com/pubs/proDatasheet/CS4344-45-48_F2.pdf" H 8700 25
 	1    0    0    -1  
 $EndComp
 Text Label 8400 1900 0    50   ~ 0
-i2s_sd
+i2s_sdo
 Text Label 8400 2000 0    50   ~ 0
 i2s_sck
 Text Label 8400 2100 0    50   ~ 0
@@ -1339,13 +1339,13 @@ Wire Wire Line
 	7450 10000 7450 9900
 Text Notes 7600 9750 0    50   ~ 0
 Stray Capacitance: 2pF\nLoad Capacitance (Crystal): 10pF\nShunt Capacitance (Crystal): 7pF
-Text Label 8450 6450 2    50   ~ 0
+Text Label 6200 5300 3    50   ~ 0
 i2s_mck
-Text Label 8450 6350 2    50   ~ 0
+Text Label 6000 5300 3    50   ~ 0
 i2s_lrck
-Text Label 8450 6250 2    50   ~ 0
+Text Label 5150 6150 0    50   ~ 0
 i2s_sck
-Text Label 8450 6150 2    50   ~ 0
+Text Label 5150 6250 0    50   ~ 0
 i2s_sdo
 Wire Wire Line
 	8450 6150 8150 6150
@@ -1355,8 +1355,6 @@ Wire Wire Line
 	8450 6350 8150 6350
 Wire Wire Line
 	8150 6450 8450 6450
-Text Label 7500 5300 3    50   ~ 0
-i2s_sdi
 Wire Wire Line
 	7500 5300 7500 5600
 $Comp
@@ -1594,78 +1592,76 @@ Wire Wire Line
 	3550 6200 3250 6200
 Wire Wire Line
 	3250 6100 3550 6100
-Text Label 5250 6250 0    50   ~ 0
+Text Label 5250 5500 0    50   ~ 0
 bt_rx
 Wire Wire Line
-	5250 6250 5450 6250
-Text Label 5250 6150 0    50   ~ 0
+	5150 6250 5450 6250
+Text Label 5250 5400 0    50   ~ 0
 bt_rts
 Wire Wire Line
-	5250 6150 5450 6150
-Text Label 6000 5400 3    50   ~ 0
+	5150 6150 5450 6150
+Text Label 5000 5050 3    50   ~ 0
 bt_tx
-Text Label 6200 5400 3    50   ~ 0
+Text Label 5250 5600 0    50   ~ 0
 bt_cts
 Wire Wire Line
-	6200 5400 6200 5600
+	6200 5300 6200 5600
 Wire Wire Line
-	6000 5600 6000 5400
+	6000 5600 6000 5300
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F4EBD7A
-P 4700 6050
-F 0 "SW1" V 4700 6002 50  0000 R CNN
-F 1 "~" V 4655 6002 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 4700 6250 50  0001 C CNN
-F 3 "~" H 4700 6250 50  0001 C CNN
-	1    4700 6050
-	0    -1   -1   0   
+P 3800 5200
+F 0 "SW1" V 3800 5152 50  0000 R CNN
+F 1 "~" V 3755 5152 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 3800 5400 50  0001 C CNN
+F 3 "~" H 3800 5400 50  0001 C CNN
+	1    3800 5200
+	0    1    -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5F4ED23B
-P 4700 6750
-F 0 "SW2" V 4700 6702 50  0000 R CNN
-F 1 "~" V 4655 6702 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 4700 6950 50  0001 C CNN
-F 3 "~" H 4700 6950 50  0001 C CNN
-	1    4700 6750
-	0    -1   -1   0   
+P 4250 5200
+F 0 "SW2" V 4250 5152 50  0000 R CNN
+F 1 "~" V 4205 5152 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 4250 5400 50  0001 C CNN
+F 3 "~" H 4250 5400 50  0001 C CNN
+	1    4250 5200
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4700 6550 4700 6450
+	4250 5400 4250 5500
 Wire Wire Line
-	4700 6450 5450 6450
+	5450 6350 5150 6350
 Wire Wire Line
-	5450 6350 4700 6350
-Wire Wire Line
-	4700 6350 4700 6250
+	3800 5500 3800 5400
 $Comp
 L power:GND #PWR0151
 U 1 1 5F50471B
-P 4700 7050
-F 0 "#PWR0151" H 4700 6800 50  0001 C CNN
-F 1 "GND" H 4705 6877 50  0000 C CNN
-F 2 "" H 4700 7050 50  0001 C CNN
-F 3 "" H 4700 7050 50  0001 C CNN
-	1    4700 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 7050 4700 6950
-$Comp
-L power:GND #PWR0152
-U 1 1 5F510616
-P 4700 5750
-F 0 "#PWR0152" H 4700 5500 50  0001 C CNN
-F 1 "GND" H 4705 5577 50  0000 C CNN
-F 2 "" H 4700 5750 50  0001 C CNN
-F 3 "" H 4700 5750 50  0001 C CNN
-	1    4700 5750
+P 4250 4900
+F 0 "#PWR0151" H 4250 4650 50  0001 C CNN
+F 1 "GND" H 4255 4727 50  0000 C CNN
+F 2 "" H 4250 4900 50  0001 C CNN
+F 3 "" H 4250 4900 50  0001 C CNN
+	1    4250 4900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4700 5750 4700 5850
+	4250 4900 4250 5000
+$Comp
+L power:GND #PWR0152
+U 1 1 5F510616
+P 3800 4900
+F 0 "#PWR0152" H 3800 4650 50  0001 C CNN
+F 1 "GND" H 3805 4727 50  0000 C CNN
+F 2 "" H 3800 4900 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3800 4900 3800 5000
 Text Label 5200 7050 0    50   ~ 0
 xres
 Text Label 5200 7150 0    50   ~ 0
@@ -1798,59 +1794,6 @@ NoConn ~ 2450 6700
 NoConn ~ 2450 6100
 Text Notes 9300 7550 0    50   ~ 0
 Analog Inputs
-$Comp
-L Connector_Generic:Conn_01x06 J5
-U 1 1 5F8492FD
-P 9050 3950
-F 0 "J5" H 9130 3942 50  0000 L CNN
-F 1 "Conn_01x06" H 9130 3851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9050 3950 50  0001 C CNN
-F 3 "~" H 9050 3950 50  0001 C CNN
-	1    9050 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0155
-U 1 1 5F84A676
-P 8650 3750
-F 0 "#PWR0155" H 8650 3500 50  0001 C CNN
-F 1 "GND" V 8650 3500 50  0000 C CNN
-F 2 "" H 8650 3750 50  0001 C CNN
-F 3 "" H 8650 3750 50  0001 C CNN
-	1    8650 3750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 3750 8850 3750
-$Comp
-L power:+3.3V #PWR0156
-U 1 1 5F85A280
-P 8650 3850
-F 0 "#PWR0156" H 8650 3700 50  0001 C CNN
-F 1 "+3.3V" V 8650 4100 50  0000 C CNN
-F 2 "" H 8650 3850 50  0001 C CNN
-F 3 "" H 8650 3850 50  0001 C CNN
-	1    8650 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8650 3850 8850 3850
-Text Label 8550 3950 0    50   ~ 0
-i2s_sd
-Text Label 8550 4050 0    50   ~ 0
-i2s_sck
-Text Label 8550 4150 0    50   ~ 0
-i2s_lrck
-Wire Wire Line
-	8850 4150 8550 4150
-Wire Wire Line
-	8550 4050 8850 4050
-Wire Wire Line
-	8850 3950 8550 3950
-Text Label 8550 4250 0    50   ~ 0
-i2s_mck
-Wire Wire Line
-	8550 4250 8850 4250
 $Comp
 L audio_amplifier:TPA6139A2 U4
 U 1 1 5F8BD36E
@@ -2093,16 +2036,6 @@ Text Notes 11550 750  0    50   ~ 0
 Headphone Amp
 Text Notes 13650 750  0    50   ~ 0
 Headphone Connector
-Wire Notes Line
-	8150 3450 9950 3450
-Wire Notes Line
-	9950 3450 9950 4500
-Wire Notes Line
-	9950 4500 8150 4500
-Wire Notes Line
-	8150 4500 8150 3450
-Text Notes 8150 3450 0    50   ~ 0
-I2S Bus Connector
 $Comp
 L Connector:AudioJack3 J6
 U 1 1 5F017100
@@ -2154,29 +2087,29 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5F00B9F6
-P 6700 4750
-F 0 "SW3" V 6700 4702 50  0000 R CNN
-F 1 "~" V 6655 4702 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 6700 4950 50  0001 C CNN
-F 3 "~" H 6700 4950 50  0001 C CNN
-	1    6700 4750
-	0    -1   -1   0   
+P 4600 5200
+F 0 "SW3" V 4600 5152 50  0000 R CNN
+F 1 "~" V 4555 5152 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 4600 5400 50  0001 C CNN
+F 3 "~" H 4600 5400 50  0001 C CNN
+	1    4600 5200
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6700 5600 6700 4950
+	4600 5500 4600 5400
 $Comp
 L power:GND #PWR0150
 U 1 1 5F01F914
-P 6700 4450
-F 0 "#PWR0150" H 6700 4200 50  0001 C CNN
-F 1 "GND" H 6705 4277 50  0000 C CNN
-F 2 "" H 6700 4450 50  0001 C CNN
-F 3 "" H 6700 4450 50  0001 C CNN
-	1    6700 4450
-	-1   0    0    1   
+P 4600 4900
+F 0 "#PWR0150" H 4600 4650 50  0001 C CNN
+F 1 "GND" H 4605 4727 50  0000 C CNN
+F 2 "" H 4600 4900 50  0001 C CNN
+F 3 "" H 4600 4900 50  0001 C CNN
+	1    4600 4900
+	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6700 4450 6700 4550
+	4600 4900 4600 5000
 $Comp
 L Device:C C35
 U 1 1 5F03BAF0
@@ -2295,4 +2228,16 @@ F 3 "" H 10500 6750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 6750 10500 6650
+Text Label 3800 5500 1    50   ~ 0
+sw1
+Text Label 4250 5500 1    50   ~ 0
+sw2
+Text Label 4600 5500 1    50   ~ 0
+sw3
+Text Label 5150 6450 0    50   ~ 0
+sw1
+Wire Wire Line
+	5150 6450 5450 6450
+Text Label 5150 6350 0    50   ~ 0
+sw2
 $EndSCHEMATC
