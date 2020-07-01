@@ -247,7 +247,7 @@ Wire Wire Line
 	3900 1750 3900 1650
 Connection ~ 3900 1650
 Wire Wire Line
-	3900 1650 4800 1650
+	3900 1650 4000 1650
 $Comp
 L power:GND #PWR0107
 U 1 1 5EF73BA8
@@ -1347,16 +1347,6 @@ Text Label 5150 6150 0    50   ~ 0
 i2s_sck
 Text Label 5150 6250 0    50   ~ 0
 i2s_sdo
-Wire Wire Line
-	8450 6150 8150 6150
-Wire Wire Line
-	8150 6250 8450 6250
-Wire Wire Line
-	8450 6350 8150 6350
-Wire Wire Line
-	8150 6450 8450 6450
-Wire Wire Line
-	7500 5300 7500 5600
 $Comp
 L Device:R_POT RV3
 U 1 1 5F13D267
@@ -1368,8 +1358,6 @@ F 3 "~" H 10100 7800 50  0001 C CNN
 	1    10100 7800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 7550 9300 7550
 Wire Wire Line
 	10100 7550 10100 7650
 $Comp
@@ -1462,7 +1450,6 @@ F 3 "~" H 9300 7800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9300 7650 9300 7550
-Connection ~ 9300 7550
 Wire Wire Line
 	9300 7550 9700 7550
 $Comp
@@ -1492,15 +1479,15 @@ Wire Wire Line
 	9450 7800 9550 7800
 Wire Wire Line
 	9050 7800 9150 7800
-Text Label 8350 7650 2    50   ~ 0
+Text Label 7600 8500 1    50   ~ 0
 a0
 Wire Wire Line
 	8350 7650 8150 7650
-Text Label 7600 8500 1    50   ~ 0
+Text Label 8350 7650 2    50   ~ 0
 a1
 Wire Wire Line
 	7600 8500 7600 8300
-Text Label 7500 8500 1    50   ~ 0
+Text Label 8350 7550 2    50   ~ 0
 a2
 Wire Wire Line
 	7500 8500 7500 8300
@@ -1592,17 +1579,17 @@ Wire Wire Line
 	3550 6200 3250 6200
 Wire Wire Line
 	3250 6100 3550 6100
-Text Label 5250 5500 0    50   ~ 0
+Text Label 5150 6450 0    50   ~ 0
 bt_rx
 Wire Wire Line
 	5150 6250 5450 6250
-Text Label 5250 5400 0    50   ~ 0
+Text Label 6600 5400 3    50   ~ 0
 bt_rts
 Wire Wire Line
 	5150 6150 5450 6150
-Text Label 5000 5050 3    50   ~ 0
+Text Label 5150 6350 0    50   ~ 0
 bt_tx
-Text Label 5250 5600 0    50   ~ 0
+Text Label 6700 5400 3    50   ~ 0
 bt_cts
 Wire Wire Line
 	6200 5300 6200 5600
@@ -1758,14 +1745,6 @@ Wire Wire Line
 Connection ~ 3200 8900
 Wire Wire Line
 	3200 8900 3200 8800
-Text Label 6300 5400 3    50   ~ 0
-ft_~cts~
-Text Label 6400 5400 3    50   ~ 0
-ft_tx
-Text Label 6500 5400 3    50   ~ 0
-ft_rx
-Text Label 6600 5400 3    50   ~ 0
-ft_~rts~
 Wire Wire Line
 	6600 5400 6600 5600
 Wire Wire Line
@@ -2234,10 +2213,41 @@ Text Label 4250 5500 1    50   ~ 0
 sw2
 Text Label 4600 5500 1    50   ~ 0
 sw3
-Text Label 5150 6450 0    50   ~ 0
+Text Label 6300 5400 3    50   ~ 0
 sw1
 Wire Wire Line
 	5150 6450 5450 6450
-Text Label 5150 6350 0    50   ~ 0
+Text Label 6400 5400 3    50   ~ 0
 sw2
+NoConn ~ 7500 5600
+NoConn ~ 8150 6450
+NoConn ~ 8150 6350
+NoConn ~ 8150 6250
+NoConn ~ 8150 6150
+Text Label 6500 5400 3    50   ~ 0
+sw3
+Wire Wire Line
+	6700 5400 6700 5600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F3757E1
+P 4000 1550
+F 0 "#FLG0101" H 4000 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 1723 50  0001 C CNN
+F 2 "" H 4000 1550 50  0001 C CNN
+F 3 "~" H 4000 1550 50  0001 C CNN
+	1    4000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1550 4000 1650
+Connection ~ 4000 1650
+Wire Wire Line
+	4000 1650 4800 1650
+Text Label 7500 8500 1    50   ~ 0
+as
+Wire Wire Line
+	8150 7550 8350 7550
+Text Label 10700 7550 2    50   ~ 0
+as
 $EndSCHEMATC
