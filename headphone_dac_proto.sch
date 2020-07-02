@@ -168,7 +168,7 @@ U 1 1 5EF6A2EA
 P 5300 1750
 F 0 "U1" H 5300 2117 50  0000 C CNN
 F 1 "LT3042xMSE" H 5300 2026 50  0000 C CNN
-F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm" H 5300 2075 50  0001 C CNN
+F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm_ThermalVias" H 5300 2075 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf" H 5300 1750 50  0001 C CNN
 	1    5300 1750
 	1    0    0    -1  
@@ -1479,8 +1479,6 @@ Wire Wire Line
 	9450 7800 9550 7800
 Wire Wire Line
 	9050 7800 9150 7800
-Text Label 7600 8500 1    50   ~ 0
-a0
 Wire Wire Line
 	8350 7650 8150 7650
 Text Label 8350 7650 2    50   ~ 0
@@ -2016,17 +2014,6 @@ Headphone Amp
 Text Notes 13650 750  0    50   ~ 0
 Headphone Connector
 $Comp
-L Connector:AudioJack3 J6
-U 1 1 5F017100
-P 14300 2000
-F 0 "J6" H 14020 2025 50  0000 R CNN
-F 1 "6.35mm" H 14020 1934 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 14300 2000 50  0001 C CNN
-F 3 "~" H 14300 2000 50  0001 C CNN
-	1    14300 2000
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5F038FE4
 P 7200 9500
@@ -2244,10 +2231,23 @@ Wire Wire Line
 Connection ~ 4000 1650
 Wire Wire Line
 	4000 1650 4800 1650
-Text Label 7500 8500 1    50   ~ 0
-as
 Wire Wire Line
 	8150 7550 8350 7550
 Text Label 10700 7550 2    50   ~ 0
 as
+Text Label 7600 8500 1    50   ~ 0
+a0
+Text Label 7500 8500 1    50   ~ 0
+as
+$Comp
+L Connector:AudioJack3 J6
+U 1 1 5F017100
+P 14300 2000
+F 0 "J6" H 14020 2025 50  0000 R CNN
+F 1 "6.35mm" H 14020 1934 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 14300 2000 50  0001 C CNN
+F 3 "~" H 14300 2000 50  0001 C CNN
+	1    14300 2000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
