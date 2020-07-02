@@ -1494,7 +1494,7 @@ L Connector_Generic:Conn_02x10_Odd_Even J2
 U 1 1 5F2ABC57
 P 2950 6400
 F 0 "J2" H 3000 5675 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 3000 5766 50  0000 C CNN
+F 1 "Bluetooth" H 3000 5766 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 2950 6400 50  0001 C CNN
 F 3 "~" H 2950 6400 50  0001 C CNN
 	1    2950 6400
@@ -1581,14 +1581,10 @@ Text Label 5150 6450 0    50   ~ 0
 bt_rx
 Wire Wire Line
 	5150 6250 5450 6250
-Text Label 6600 5400 3    50   ~ 0
-bt_rts
 Wire Wire Line
 	5150 6150 5450 6150
 Text Label 5150 6350 0    50   ~ 0
 bt_tx
-Text Label 6700 5400 3    50   ~ 0
-bt_cts
 Wire Wire Line
 	6200 5300 6200 5600
 Wire Wire Line
@@ -1674,7 +1670,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5F58F894
 P 3500 8700
 F 0 "J3" H 3550 9117 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 3550 9026 50  0000 C CNN
+F 1 "Prog" H 3550 9026 50  0000 C CNN
 F 2 "conn_prog:FTSH-105" H 3500 8700 50  0001 C CNN
 F 3 "~" H 3500 8700 50  0001 C CNN
 	1    3500 8700
@@ -1743,8 +1739,6 @@ Wire Wire Line
 Connection ~ 3200 8900
 Wire Wire Line
 	3200 8900 3200 8800
-Wire Wire Line
-	6600 5400 6600 5600
 Wire Wire Line
 	6500 5600 6500 5400
 Wire Wire Line
@@ -2213,8 +2207,6 @@ NoConn ~ 8150 6250
 NoConn ~ 8150 6150
 Text Label 6500 5400 3    50   ~ 0
 sw3
-Wire Wire Line
-	6700 5400 6700 5600
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F3757E1
@@ -2244,10 +2236,14 @@ L Connector:AudioJack3 J6
 U 1 1 5F017100
 P 14300 2000
 F 0 "J6" H 14020 2025 50  0000 R CNN
-F 1 "6.35mm" H 14020 1934 50  0000 R CNN
+F 1 "Headphones" H 14020 1934 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 14300 2000 50  0001 C CNN
 F 3 "~" H 14300 2000 50  0001 C CNN
 	1    14300 2000
 	-1   0    0    1   
 $EndComp
+NoConn ~ 2450 6200
+NoConn ~ 6600 5600
+NoConn ~ 6700 5600
+NoConn ~ 2450 6300
 $EndSCHEMATC
