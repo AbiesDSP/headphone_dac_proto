@@ -320,37 +320,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# audio_amplifier_TPA6139A2
+# headphone_dac_proto-rescue_CS4344-audio_digital
 #
-DEF audio_amplifier_TPA6139A2 U 0 40 Y Y 1 F N
-F0 "U" -350 550 50 H V C CNN
-F1 "audio_amplifier_TPA6139A2" 300 550 50 H V C CNN
-F2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" -450 350 50 H I C CNN
-F3 "" -450 350 50 H I C CNN
-DRAW
-S -350 500 350 -500 0 1 0 f
-X -IN_L 1 -450 300 100 R 50 50 1 1 I
-X VDD 10 -50 600 100 D 50 50 1 1 W
-X GND 11 0 -600 100 U 50 50 1 1 W N
-X GAIN 12 -450 -300 100 R 50 50 1 1 I
-X OUT_R 13 450 100 100 L 50 50 1 1 O
-X -IN_R 14 -450 100 100 R 50 50 1 1 I
-X OUT_L 2 450 300 100 L 50 50 1 1 O
-X GND 3 0 -600 100 U 50 50 1 1 W
-X ~MUTE~ 4 -450 -100 100 R 50 50 1 1 I
-X VSS 5 50 600 100 D 50 50 1 1 w
-X CN 6 450 -300 100 L 50 50 1 1 B
-X NC 7 -450 -400 100 R 50 50 1 1 N N
-X NC 8 450 -400 100 L 50 50 1 1 N N
-X CP 9 450 -100 100 L 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# audio_digital_CS4344
-#
-DEF audio_digital_CS4344 U 0 40 Y Y 1 F N
+DEF headphone_dac_proto-rescue_CS4344-audio_digital U 0 40 Y Y 1 F N
 F0 "U" -300 450 50 H V C CNN
-F1 "audio_digital_CS4344" 150 450 50 H V C CNN
+F1 "headphone_dac_proto-rescue_CS4344-audio_digital" 150 450 50 H V C CNN
 F2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" -450 300 50 H I C CNN
 F3 "" -450 300 50 H I C CNN
 DRAW
@@ -368,11 +342,11 @@ X VA 9 0 500 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# microcontroller_arm_CY8C5888LTI-LP097
+# headphone_dac_proto-rescue_CY8C5888LTI-LP097-microcontroller_arm
 #
-DEF microcontroller_arm_CY8C5888LTI-LP097 U 0 40 Y Y 1 F N
+DEF headphone_dac_proto-rescue_CY8C5888LTI-LP097-microcontroller_arm U 0 40 Y Y 1 F N
 F0 "U" 0 -100 60 H V C CNN
-F1 "microcontroller_arm_CY8C5888LTI-LP097" 0 100 60 H V C CNN
+F1 "headphone_dac_proto-rescue_CY8C5888LTI-LP097-microcontroller_arm" 0 100 60 H V C CNN
 F2 "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias" -950 800 60 H I C CNN
 F3 "" -950 800 60 H I C CNN
 F4 "Cypress Semicondutor" 2000 200 60 H I C CNN "Manufacturer"
@@ -460,6 +434,32 @@ X EPAD 69 1050 -1350 200 U 50 50 1 1 W
 X VBOOST 7 -1350 200 200 R 50 50 1 1 I
 X VBAT 8 -1350 100 200 R 50 50 1 1 W
 X VSSD 9 -1350 0 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# headphone_dac_proto-rescue_TPA6139A2-audio_amplifier
+#
+DEF headphone_dac_proto-rescue_TPA6139A2-audio_amplifier U 0 40 Y Y 1 F N
+F0 "U" -350 550 50 H V C CNN
+F1 "headphone_dac_proto-rescue_TPA6139A2-audio_amplifier" 300 550 50 H V C CNN
+F2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" -450 350 50 H I C CNN
+F3 "" -450 350 50 H I C CNN
+DRAW
+S -350 500 350 -500 0 1 0 f
+X -IN_L 1 -450 300 100 R 50 50 1 1 I
+X VDD 10 -50 600 100 D 50 50 1 1 W
+X GND 11 0 -600 100 U 50 50 1 1 W N
+X GAIN 12 -450 -300 100 R 50 50 1 1 I
+X OUT_R 13 450 100 100 L 50 50 1 1 O
+X -IN_R 14 -450 100 100 R 50 50 1 1 I
+X OUT_L 2 450 300 100 L 50 50 1 1 O
+X GND 3 0 -600 100 U 50 50 1 1 W
+X ~MUTE~ 4 -450 -100 100 R 50 50 1 1 I
+X VSS 5 50 600 100 D 50 50 1 1 w
+X CN 6 450 -300 100 L 50 50 1 1 B
+X NC 7 -450 -400 100 R 50 50 1 1 N N
+X NC 8 450 -400 100 L 50 50 1 1 N N
+X CP 9 450 -100 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
