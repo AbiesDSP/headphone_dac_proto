@@ -1880,9 +1880,9 @@ F 0 "R10" H 12070 2796 50  0000 L CNN
 F 1 "82k" V 12000 2700 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 11930 2750 50  0001 C CNN
 F 3 "~" H 12000 2750 50  0001 C CNN
-F 4 "Vishay / Dale" H 12000 2750 50  0001 C CNN "Manufacturer"
-F 5 "RCS060382K0FKEA" H 12000 2750 50  0001 C CNN "Manufacturer Part Number"
-F 6 "71-RCS060382K0FKEA" H 12000 2750 50  0001 C CNN "Mouser Part Number"
+F 4 "Yageo" H 12000 2750 50  0001 C CNN "Manufacturer"
+F 5 "MFR-25FTE52-82K" H 12000 2750 50  0001 C CNN "Manufacturer Part Number"
+F 6 "603-MFR-25FTE52-82K" H 12000 2750 50  0001 C CNN "Mouser Part Number"
 	1    12000 2750
 	1    0    0    -1  
 $EndComp
