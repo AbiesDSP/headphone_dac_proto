@@ -464,7 +464,7 @@ Connection ~ 5800 1650
 Wire Wire Line
 	5800 1650 6000 1650
 $Comp
-L audio_digital:CS4344 U3
+L headphone_dac_proto-rescue:CS4344-audio_digital U3
 U 1 1 5EFBA2D5
 P 9150 2200
 F 0 "U3" H 8850 2650 50  0000 C CNN
@@ -888,7 +888,7 @@ F 3 "" H 8600 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L microcontroller_arm:CY8C5888LTI-LP097 U2
+L headphone_dac_proto-rescue:CY8C5888LTI-LP097-microcontroller_arm U2
 U 1 1 5EEF718C
 P 6800 6950
 F 0 "U2" H 6800 7000 60  0000 L CNN
@@ -1855,7 +1855,7 @@ NoConn ~ 2450 6100
 Text Notes 9300 7550 0    50   ~ 0
 Analog Inputs
 $Comp
-L audio_amplifier:TPA6139A2 U4
+L headphone_dac_proto-rescue:TPA6139A2-audio_amplifier U4
 U 1 1 5F8BD36E
 P 12650 2200
 F 0 "U4" H 12350 2750 50  0000 C CNN

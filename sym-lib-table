@@ -4,4 +4,6 @@
   (lib (name audio_digital)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/audio_digital.lib)(options "")(descr ""))
   (lib (name microcontroller_arm)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/microcontroller_arm.lib)(options "")(descr ""))
   (lib (name audio_amplifier)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/audio_amplifier.lib)(options "")(descr ""))
+  (lib (name headphone_dac_proto-rescue)(type Legacy)(uri ${KIPRJMOD}/headphone_dac_proto-rescue.lib)(options "")(descr ""))
+  (lib (name psoc)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/psoc.lib)(options "")(descr ""))
 )
